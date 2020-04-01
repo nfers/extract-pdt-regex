@@ -9,4 +9,4 @@ RUN echo "deb http://ftp.de.debian.org/debian sid main" >> /etc/apt/sources.list
 
 WORKDIR /app
 EXPOSE 8080 3000
-CMD npm install && npm run dev & cd front && npm install && npm run serve
+CMD npm install && npm run dev & cd vue-front && npm install && npm run serve
