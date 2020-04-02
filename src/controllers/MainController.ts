@@ -9,7 +9,7 @@ class MainController{
         try{
             const file: Express.Multer.File = req['file'];
             if(file && file.mimetype === 'application/pdf'){
-                const path = `./storage/${file.filename}.html`;
+                const path = `storage/${file.filename}.html`;
                 const converter = new Pdftohtml(file.path, path);
                 converter.progress(function(ret) {
                     console.log ((ret.current*100.0)/ret.total + " %");

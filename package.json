@@ -1,14 +1,14 @@
 {
-  "name": "scraping_situacao_cadastral",
+  "name": "scraping leitor de Pdf",
   "version": "1.0.0",
-  "description": "Scraping receita situação cadastral",
+  "description": "Scraping Leitor de PDF convertendo para Json",
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node server.js",
     "dev": "npx cross-env NODE_ENV=development nodemon",
     "build": "rm -rf ./dist && tsc --project ./tsconfig.json"
   },
-  "author": "Daniel Souza <daniel.souza@tron.com.br>",
+  "author": "Daniel souza",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
